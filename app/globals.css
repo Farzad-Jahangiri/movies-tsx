@@ -2,26 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html,
+body{
+  direction: rtl;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "_regular";
+  src: local('_regular'),url("../public/font/Yekan-Bakh-FaNum-04-Regular.woff") format('truetype');
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "_medium";
+  src: local('_medium'),url("../public/font/Yekan-Bakh-FaNum-05-Medium.woff") format('truetype');
+}
+@font-face {
+  font-family: "_bold";
+  src: local('_bold'),url("../public/font/Yekan-Bakh-FaNum-06-Bold.woff") format('truetype');
+}
+@font-face {
+  font-family: "_heavy";
+  src: local('_heavy'),url("../public/font/Yekan-Bakh-FaNum-07-Heavy.woff") format('truetype');
+}
+@font-face {
+  font-family: "_fat";
+  src: local('_fat'),url("../public/font/Yekan-Bakh-FaNum-08-Fat.woff") format('truetype');
+}
+._font-regular{
+  font-family: "_regular" !important;
+}
+._font-medium{
+  font-family: "_medium" !important;
+}
+._font-bold{
+  font-family: "_bold" !important;
+}
+._font-heavy{
+  font-family: "_heavy" !important;
+}
+._font-fat{
+  font-family: "_fat" !important;
 }
